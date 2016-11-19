@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <div class="container clearfix">
+      <header class="main-header">
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a><img class="logo-pic" src="img/logo.png" width="138" height="70" alt="city of sedona"></a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="hotels.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="index-content">
+        <div class="welcome">
+          <img src="img/welcome.png" width="458" height="352" alt="welcome sedona">
+        </div>
+        <section class="reasons">
+          <div class="reasons-text">
+            <h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+            <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          </div>
+          <div class="reason-item text-white clearfix">
+            <div class="reason-one">
+              <h2>Настоящий городок</h2>
+              <p>— №1 —</p>
+              <p class="text">Седона — не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <div class="reason-pic-one">
+              <img src="img/hotel.jpg" width="800" height="400" alt="true town">
+            </div>
+          </div>
+          <div class="features">
+            <div class="feature-item">
+              <img src="img/icon-home.png" width="75" height="72" alt="living">
+              <h2>Жилье</h2>
+              <p class="text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </div>
+            <div class="feature-item">
+              <img src="img/icon-food.png" width="74" height="70" alt="food">
+              <h2>Еда</h2>
+              <p class="text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </div>
+            <div class="feature-item">
+              <img src="img/icon-gift.png" width="64" height="76" alt="souvenirs">
+              <h2>Сувениры</h2>
+              <p class="text">Не только китайского, но и местного производства!</p>
+            </div>
+          </div>
+          <div class="reason-item text-white clearfix">
+            <div class="reason-two">
+              <h2>Там есть<br>мост дьявола</h2>
+              <p>— №2 —</p>
+              <p class="text">Да, по нему можно пройтись! Если, конечно,<br> вы осмелитесь</p>
+            </div>
+            <div class="reason-pic-two">
+              <img src="img/bridge.jpg" width="800" height="400" alt="devil's bridge">
+            </div>
+          </div>
+          <div class="reasons-color-gray">
+            <div class="reasons-item">
+              <h2>Небольшая площадь</h2>
+              <p>— №3 —</p>
+              <p class="text">Все достопримечательности находятся очень близко</p>
+            </div>
+            <div class="reasons-item">
+              <h2>Красивая дорога</h2>
+              <p>— №4 —</p>
+              <p class="text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+            <div class="reasons-item">
+              <h2>Мало туристов</h2>
+              <p>— №5 —</p>
+              <p class="text">Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
+          </div>
+        </section>
+        <div class="search">
+          <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+          <p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="search-btn" href="search-form.html">Поиск гостиницы в Седоне</a>
+        </div>
+        <div class="map">
+          <div id="yandex-map"></div>
+          <div class="modal-form">
+            <form class="dates-and-visitors" action="#" method="post">
+              <div class="arrival clearfix">
+                <label for="arrival-date">Дата заезда:</label>
+                <input type="text" name="arrival-date" id="arrival-date" value="24 апреля 2016">
+                <div class="icon-arrival"></div>
+              </div>
+              <div class="departure clearfix">
+                <label for="departure-date">Дата выезда:</label>
+                <input type="text" name="departure-date" id="departure-date" value="4 июля 2016">
+                <div class="icon-departure"></div>
+              </div>
+              <div class="visitors-half clearfix">
+                <label for="adulds">Взрослые:</label>
+                <button class="visitor-minus-adulds"></button>
+                <input class="visitor-adulds" type="text" name="adulds" id="adulds" value="2">
+                <button class="visitor-plus-adulds"></button>
+                <label for="children">Дети:</label>
+                <button class="visitor-minus-children"></button>
+                <input class="visitor-children" type="text" name="children" id="children" value="0">
+                <button class="visitor-plus-children"></button>
+              </div>
+              <button class="search">Найти</button>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer class="main-footer clearfix">
+        <div class="hashtag">
+          <h2><a href="#">#visitsedona</a></h2>
+        </div>
+        <div class="social">
+          <a href="#" class="social-btn-tw"></a>
+          <a href="#" class="social-btn-fb"></a>
+          <a href="#" class="social-btn-youtube"></a>
+        </div>
+        <div class="copyright">
+          <p>Website by
+            <a href="https://htmlacademy.ru" target="_blank"></a>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="js/search.min.js"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=E5BIqaDyFhb_etKrl-hRwEFqbxGTenTZ&amp;width=1200&amp;height=593&amp;id=yandex-map"></script>
+  </body>
+</html>
